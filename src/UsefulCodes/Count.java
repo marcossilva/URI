@@ -9,13 +9,8 @@ package UsefulCodes;
  *
  * @author Marcos
  */
-public class Count {
- private static int contaDigitos(int x) {
-        int digitos = 0;
-        while (x > 0) {   
-            x /= 10;            
-            digitos++;
-        }
-        return digitos;
+public class Count {    
+ public static int contaDigitos(int x) {
+        return (int)Math.log10(x) + 1;
     }
 }
